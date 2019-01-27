@@ -1,0 +1,88 @@
+{
+  "_from": "nodecg-bundle-parser@^0.3.4",
+  "_id": "nodecg-bundle-parser@0.3.4",
+  "_inBundle": false,
+  "_integrity": "sha1-/Sfr9BcmUpTjuxAdtBXSqSzHSx8=",
+  "_location": "/nodecg-bundle-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nodecg-bundle-parser@^0.3.4",
+    "name": "nodecg-bundle-parser",
+    "escapedName": "nodecg-bundle-parser",
+    "rawSpec": "^0.3.4",
+    "saveSpec": null,
+    "fetchSpec": "^0.3.4"
+  },
+  "_requiredBy": [
+    "/@nodecg/bundle-manager"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodecg-bundle-parser/-/nodecg-bundle-parser-0.3.4.tgz",
+  "_shasum": "fd27ebf417265294e3bb101db415d2a92cc74b1f",
+  "_spec": "nodecg-bundle-parser@^0.3.4",
+  "_where": "C:\\Users\\T\\nodecg\\node_modules\\@nodecg\\bundle-manager",
+  "author": {
+    "name": "Alex Van Camp",
+    "email": "email@alexvan.camp"
+  },
+  "bugs": {
+    "url": "https://github.com/nodecg/nodecg-bundle-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "eslint": "^3.6.1",
+    "extend": "^3.0.0",
+    "json-schema-defaults": "^0.3.0",
+    "semver": "^5.0.1",
+    "tv4": "^1.2.7"
+  },
+  "deprecated": false,
+  "description": "NodeCG's bundle parser",
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo": "^0.18.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^3.0.0",
+    "mocha-lcov-reporter": "1.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 4.1.2"
+  },
+  "files": [
+    "AUTHORS",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "index.js",
+    "lib/"
+  ],
+  "homepage": "https://github.com/nodecg/nodecg-bundle-parser#readme",
+  "keywords": [
+    "nodecg",
+    "bundle",
+    "parser"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "nodecg-bundle-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://lange@github.com/nodecg/nodecg-bundle-parser.git"
+  },
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf coverage",
+    "pretest": "npm run static",
+    "static": "eslint index.js lib/**/*.js test/**/*.js",
+    "test": "istanbul cover -x \"test/**\" ./node_modules/mocha/bin/_mocha -- -R spec"
+  },
+  "version": "0.3.4"
+}
